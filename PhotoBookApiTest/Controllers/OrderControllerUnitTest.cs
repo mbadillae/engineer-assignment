@@ -9,6 +9,7 @@ using PhotoBookApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using PhotoBookApi.Helper;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PhotoBookApiTest
 {
@@ -37,12 +38,23 @@ namespace PhotoBookApiTest
         }
 
         [TestMethod]
+        public void PostOrderShouldReturnBadRequestModelInvalid()
+        {
+
+        }
+
+        [TestMethod]
+        public void PostOrderShouldReturnBadRequestOrderAlreadyPlaced()
+        {
+            
+        }
+
+        [TestMethod]
         public void PostOrderShouldReturnTrue()
         {
             // Arrange
             var mockOrderService = new MockOrderService().MockSaveOrder(new Order());
             var mocklogger = new Mock<ILogger<OrderController>>();
-            //var mockOrderContext = new Mock<OrderContext>();
             var mockOrderContext = new InMemoryDbContext().LoadTestData();
             var orderController = new OrderController(new OrderContext(mockOrderContext),mocklogger.Object,mockOrderService.Object);
             //
@@ -53,7 +65,10 @@ namespace PhotoBookApiTest
             var result = orderController.PostOrder(newOrder);
 
             //Assert
-            Assert.AreEqual(result.Result.Value, _actionResult.Value);
+            Assert.IsInstanceOfType(result, typeof(Task<ActionResult<Order>>));
+            Assert.AreEqual(_actionResult.Value, result.Result.Result);
         }
+
+        
     }
 }

@@ -35,6 +35,7 @@ Aslo we added a basic health check for DB, you can access this one running the p
 https://localhost:5001/health
 
 The Test Project createa was more a concept, because a lot of scenarios are missing here. I just created the basic scenarios.
+Also, there is a folder named "Mock", inside this folder you can find the objects to mock other class, the idea is to avoid write the same code multiple times and initialize it easily. 
 
 ## How to run the API?
 I developed all the project using Visual Studio Code, for that reason I will explain how to do it with it(yoou can do it by command line)

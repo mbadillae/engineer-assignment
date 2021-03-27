@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj": {}
+    "c:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj": {}
   },
   "projects": {
-    "C:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj": {
+    "c:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj",
+        "projectUniqueName": "c:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj",
         "projectName": "PhotoBookApi",
-        "projectPath": "C:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj",
+        "projectPath": "c:\\Git\\engineer-assignment\\PhotoBookApi\\PhotoBookApi.csproj",
         "packagesPath": "C:\\Users\\mbadi\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\engineer-assignment\\PhotoBookApi\\obj\\",
+        "outputPath": "c:\\Git\\engineer-assignment\\PhotoBookApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mbadi\\AppData\\Roaming\\NuGet\\NuGet.Config"
