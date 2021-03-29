@@ -40,6 +40,7 @@ namespace PhotoBookApi.Controllers
 
                 if ((response == null) || string.IsNullOrEmpty(response.OrderId))
                 {
+                    //TODO: Change this OkObject result to retrieve 404 error
                     var x = Ok($"No data found for order {orderId}");
                     return x;
                     ///return Ok($"No data found for order {orderId}");
